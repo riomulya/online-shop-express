@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .input-form {
+    @apply focus:bg-gray-200 focus:outline-sky-700 rounded-lg p-0.5 bg-gray-50;
+  }
+}
+
+body {
+  background-color: #eeeee4;
+}
