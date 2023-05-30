@@ -1,11 +1,12 @@
-<%- include('../includes/head.ejs',{pageTitle:'Sign Up'}) %>
+<%- include('/views/shared/includes/head.ejs',{pageTitle:'Sign Up'}) %>
     </head>
 
     <body>
-        <%- include('../includes/header.ejs') %>
+        <%- include('/views/shared/includes/header.ejs') %>
             <main class="mt-7 mb-7 flex w-1/3 text-center h-auto mx-auto bg-slate-200 p-5 flex-col rounded-2xl">
                 <h1 class="mb-7 font-semibold text-xl text-slate-800">Create New Account</h1>
                 <form action="/signup" method="POST">
+                    <input type="hidden" name="_csrf" value="<%= locals.csrfToken %>">
                     <p class="inline">
                         <label class="block" for="email">E-Mail</label>
                         <input class="input-form" type="email" id="email" name="email" required>
@@ -51,4 +52,4 @@
             </main>
 
 
-            <%- include("../includes/footer.ejs") %>
+            <%- include("/views/shared/includes/footer.ejs") %>
