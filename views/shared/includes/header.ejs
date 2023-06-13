@@ -1,5 +1,12 @@
 <header>
-    <div class="h-auto mb-2 p-5 bg-slate-400 font-bold text-lg w-screen">
-        <a href="#">RMS</a>
+    <div class="flex h-96 mb-2 p-5 bg-slate-400 font-medium text-lg w-screen justify-between">
+        <a href="#" class="">RMS</a>
+        <p class="mx-auto"></p>
+        <% if(locals.isAuth){ %>
+            <button class=" text-stone-500 ">Logout</button>
+            <% } else{%>
+                <button>Login</button>
+                <button>Signup</button>
+                <% } %>
     </div>
 </header>

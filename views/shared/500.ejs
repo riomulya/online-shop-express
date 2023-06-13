@@ -1,4 +1,4 @@
-<%- include('./includes/head.ejs',{pageTitle:'An Error Occured'}) %>
+<%- include('../shared/includes/head.ejs',{pageTitle:'An Error Occured'}) %>
     </head>
 
     <body>
@@ -6,6 +6,6 @@
             <main class="mt-7 mb-7 flex w-1/3 text-center h-auto mx-auto bg-slate-200 p-5 flex-col rounded-2xl">
                 <h1 class="font-bold text-xl text-stone-700">Sorry Server Error</h1>
                 <p>Unfortunately Something went wrong - please try again later</p>
-                <button class="btn-primary mt-4 mb-4">Back To Safety</button>
+                <button class="btn-primary mt-4 mb-4"><a href="/login">Back To Safety</a></button>
             </main>
             <%- include("./includes/footer.ejs") %>
